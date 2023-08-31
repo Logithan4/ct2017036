@@ -1,4 +1,10 @@
-#workflow_dispatch: {}
+name: Upload Website
+
+on:
   push:
-    branches: [ main ]
-  pull_request:
+    branches:
+    - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest

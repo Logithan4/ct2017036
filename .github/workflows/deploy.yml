@@ -1,7 +1,7 @@
-name: Upload Website
+name: Build, Test, and Deploy
 
 on:
   push:
-    branches:
-    - main
-
+    branches: "main"
+  pull_request:
+    branches: "main"
